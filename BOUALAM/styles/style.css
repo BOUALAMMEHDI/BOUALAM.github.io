@@ -1,0 +1,179 @@
+body{ 
+    background:linear-gradient(-64deg,#7eec5c,hsl(51, 54%, 46%),black,rgb(43, 75, 75));
+    background-size: 200% 400%;
+    animation:gradients 8s ease infinite;
+}
+@keyframes gradients {
+    0%
+    {   
+        background-position: 0% 50% ;
+    }
+    50%{
+        background-position: 100% 50% ; 
+    }
+    100%{
+        background-position: 0% 50% ;
+	}
+}
+/*NavBar*/
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.navbar-light .navbar-brand {
+    color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;	
+    letter-spacing: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: boualam 6s steps(22);
+}
+@keyframes boualam {
+    0% 
+    {
+        width: 0ch;
+    }
+    100%
+    {
+        width: 22ch;
+    }
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: white;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link::after {
+content: '';
+display: block;
+width: 0;
+height: 2px;
+background: white;
+transition: width .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+    }
+
+
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+    }
+}
+/*Fin NavBar */
+/*welecom*/
+
+.welecome{
+	height: 400px;
+	color: white;
+}	
+.welecome h1{
+ margin-top: 100px;
+ font-size:100px;
+	text-transform: uppercase;
+	letter-spacing: 0.1px;
+	font-family: merienda;
+}
+
+@media screen and (max-width: 700px) {
+	.welecome h1{
+		font-size:45px;
+		margin-top: 100px;
+	}
+}
+.welecome h1  span:nth-child(1){
+	animation-delay:0s ;
+}
+.welecome h1  span:nth-child(2)
+{
+	animation-delay:0.1s ;
+}
+.welecome h1  span:nth-child(3)
+{
+	animation-delay:0.2s;
+}
+.welecome h1  span:nth-child(4)
+{
+	animation-delay:0.3s ;
+}
+.welecome h1 span:nth-child(5)
+{
+	animation-delay:0.4s ;
+}
+.welecome h1 span:nth-child(6)
+{
+	animation-delay:0.5s ;
+}
+.welecome h1 span:nth-child(7)
+{
+	animation-delay:0.6s ;
+}
+.welecome h1 span{
+animation: animate 2s linear infinite;
+}
+@keyframes animate {
+	0% ,70%
+	{
+		color:white;
+		box-shadow: none;
+	}
+	100%
+	{
+		color:black;                                    
+		/* text-shadow: 0 0 10% black,
+					 0 0 20% black,
+		             0 0 40% black,
+		             0 0 80% black,
+	             	 0 0 120% black,
+	             	 0 0 140% black,
+	             	 0 0 160% black,
+					 0 0 180% black; */
+	box-shadow: 2px 10px 10px 2px black;
+	
+}
+}
+
+.about-link li 
+{
+    display: inline-block;
+    text-decoration: none;
+	margin: 0 12px;
+}
+.about-link li a
+{
+    font-size: 20px;
+   color: black;
+}
+ 
